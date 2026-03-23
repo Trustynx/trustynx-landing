@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,8 +10,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F7FA]/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
-          Trustynx
+        <Link href="/" className="flex items-center">
+          <Image src="/text-logo.svg" alt="Trustynx" width={140} height={37} priority />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

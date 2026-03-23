@@ -1,12 +1,12 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer id="contact" className="bg-foreground text-white py-12 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <span className="text-lg font-semibold tracking-tight text-white">
-              Trustynx
-            </span>
+            <Image src="/text-logo-white.svg" alt="Trustynx" width={140} height={37} />
             <p className="mt-3 text-sm text-white/60 font-(family-name:--font-dm-sans) leading-relaxed max-w-sm">
               The verification layer for healthcare professionals. Building trust infrastructure that healthcare deserves.
             </p>

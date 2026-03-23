@@ -6,7 +6,6 @@
   --muted: #5A6A7E;
   --accent: #2F80ED;
   --accent-light: #E8F0FE;
-  --success: #27AE60;
   --border: #DDE3EB;
 }
 
@@ -16,7 +15,6 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
-  --color-success: var(--success);
   --color-border: var(--border);
   --font-sans: var(--font-manrope);
   --font-body: var(--font-dm-sans);

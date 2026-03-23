@@ -4,21 +4,21 @@ const levels = [
     title: "Profile Created",
     description: "Doctor has signed up and created a public profile. No credentials submitted yet.",
     status: "Unverified",
-    color: "bg-gray-100 text-gray-600",
+    color: "bg-[#F5F7FA] text-muted",
   },
   {
     level: "Level 2",
     title: "Verification Pending",
     description: "Credentials have been submitted and are under review by the Trustynx team.",
     status: "In Review",
-    color: "bg-amber-50 text-amber-700",
+    color: "bg-accent-light text-accent",
   },
   {
     level: "Level 3",
     title: "Trustynx Verified",
     description: "Credentials reviewed and confirmed. Full access to trust features and QR verification.",
     status: "Verified",
-    color: "bg-green-50 text-green-700",
+    color: "bg-accent text-white",
   },
 ];
 

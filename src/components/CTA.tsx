@@ -19,7 +19,7 @@ export default function CTA() {
           </a>
           <a
             href="mailto:team@trustynx.com"
-            className="w-full sm:w-auto px-8 py-3.5 border border-border text-foreground font-medium rounded-lg hover:bg-gray-50 transition-colors text-center"
+            className="w-full sm:w-auto px-8 py-3.5 border border-border text-foreground font-medium rounded-lg hover:bg-white transition-colors text-center"
           >
             Talk to our team
           </a>

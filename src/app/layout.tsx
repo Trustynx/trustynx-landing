@@ -1,33 +1,33 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Trustynx — The Verification Layer for Healthcare Professionals",
+  title: "Trustynx — Trust, verified.",
   description:
-    "Trustynx helps doctors build trusted professional profiles and verify their credentials. Transparent, secure healthcare verification infrastructure.",
+    "Trustynx helps doctors prove they're legitimate and helps patients trust who they're seeing. Healthcare verification infrastructure.",
   openGraph: {
-    title: "Trustynx — The Verification Layer for Healthcare Professionals",
+    title: "Trustynx — Trust, verified.",
     description:
-      "Trusted profiles and credential verification for healthcare professionals.",
+      "Trustynx makes trust in healthcare instant, visible, and reliable.",
     type: "website",
     url: "https://trustynx.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trustynx — The Verification Layer for Healthcare Professionals",
+    title: "Trustynx — Trust, verified.",
     description:
-      "Trusted profiles and credential verification for healthcare professionals.",
+      "Trustynx makes trust in healthcare instant, visible, and reliable.",
   },
 };
 
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

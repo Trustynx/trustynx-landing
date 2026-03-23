@@ -80,7 +80,7 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="p-6 rounded-xl border border-border hover:border-accent/30 transition-colors"
+              className="p-6 rounded-xl bg-white border border-border hover:border-accent/30 transition-colors"
             >
               <div className="w-10 h-10 rounded-lg bg-accent-light flex items-center justify-center text-accent mb-4">
                 {feature.icon}
@@ -88,7 +88,7 @@ export default function Features() {
               <h3 className="text-base font-semibold text-foreground mb-2">
                 {feature.title}
               </h3>
-              <p className="text-sm text-muted leading-relaxed">
+              <p className="text-sm text-muted font-(family-name:--font-dm-sans) leading-relaxed">
                 {feature.description}
               </p>
             </div>

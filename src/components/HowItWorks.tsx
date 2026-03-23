@@ -21,7 +21,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 md:py-28 px-6 bg-gray-50">
+    <section id="how-it-works" className="py-20 md:py-28 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">
@@ -41,7 +41,7 @@ export default function HowItWorks() {
               <h3 className="text-lg font-semibold text-foreground mb-2">
                 {step.title}
               </h3>
-              <p className="text-muted leading-relaxed">{step.description}</p>
+              <p className="text-muted font-(family-name:--font-dm-sans) leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

@@ -7,7 +7,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5F7FA]/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
           Trustynx
@@ -57,7 +57,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-border px-6 py-4 space-y-3">
+        <div className="md:hidden bg-[#F5F7FA] border-t border-border px-6 py-4 space-y-3">
           <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="block text-sm text-muted hover:text-foreground">
             How It Works
           </a>

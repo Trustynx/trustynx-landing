@@ -10,9 +10,9 @@ export default function Hero() {
           The verification layer for healthcare professionals
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-          Trustynx helps doctors build public professional profiles and verify their credentials.
-          Patients and institutions can confirm who they are dealing with — instantly.
+        <p className="mt-6 text-lg md:text-xl text-muted font-(family-name:--font-dm-sans) max-w-2xl mx-auto leading-relaxed">
+          Trustynx helps doctors prove they&apos;re legitimate and helps patients trust who they&apos;re seeing.
+          Verification that&apos;s instant, visible, and reliable.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

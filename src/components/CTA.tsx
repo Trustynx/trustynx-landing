@@ -5,7 +5,7 @@ export default function CTA() {
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">
           Join as a founding doctor
         </h2>
-        <p className="mt-4 text-muted text-lg leading-relaxed">
+        <p className="mt-4 text-muted text-lg font-(family-name:--font-dm-sans) leading-relaxed">
           Be among the first healthcare professionals to build a verified presence on Trustynx.
           Founding doctors receive a permanent badge recognizing their early trust in the platform.
         </p>

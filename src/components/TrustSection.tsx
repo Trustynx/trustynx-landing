@@ -18,13 +18,13 @@ const levels = [
     title: "Trustynx Verified",
     description: "Credentials reviewed and confirmed. Full access to trust features and QR verification.",
     status: "Verified",
-    color: "bg-accent-light text-accent",
+    color: "bg-green-50 text-green-700",
   },
 ];
 
 export default function TrustSection() {
   return (
-    <section id="trust" className="py-20 md:py-28 px-6 bg-gray-50">
+    <section id="trust" className="py-20 md:py-28 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">
@@ -47,7 +47,7 @@ export default function TrustSection() {
               <h3 className="text-lg font-semibold text-foreground mt-2 mb-3">
                 {item.title}
               </h3>
-              <p className="text-sm text-muted leading-relaxed flex-1">
+              <p className="text-sm text-muted font-(family-name:--font-dm-sans) leading-relaxed flex-1">
                 {item.description}
               </p>
               <div className="mt-5">

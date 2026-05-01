@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-button: #1563b4;
+  --color-main: #0a1a2f;
+  --color-para: #605c5c;
+  --color-accent-light: #eff8ff;
+  --color-bright: #c0dbf7;
+  --font-sans: var(--font-satoshi);
+  --font-body: var(--font-dm-sans);
+}

@@ -1,5 +1,29 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../base/Button";
+
+interface NavProp {
+  title: string;
+  ref: string;
+}
+
+const nav: NavProp[] = [
+  {
+    title: "How It Works",
+    ref: "#works",
+  },
+  {
+    title: "For Doctors",
+    ref: "#join",
+  },
+  {
+    title: "Verification",
+    ref: "#real",
+  },
+  {
+    title: "FAQs",
+    ref: "#faqs",
+  },
+];
 
 export default function Navbar() {
   return (
@@ -12,18 +36,22 @@ export default function Navbar() {
           height={40}
         />
         <nav className="flex justify-between items-center gap-12">
-          <a className="cursor-pointer">How It Works</a>
-          <a className="cursor-pointer">For Doctors</a>
-          <a className="cursor-pointer">Verification</a>
-          <a className="cursor-pointer">FAQs</a>
+          {nav.map((navi: NavProp, index) => {
+            return (
+              <a
+                key={index}
+                href={navi.ref}
+                className="cursor-pointer text-main"
+              >
+                {navi.title}
+              </a>
+            );
+          })}
         </nav>
         <Button
           className="border rounded-xl w-fit h-fit py-4 px-6 bg-button text-xl text-white"
           text="Join as a Doctor"
         />
-        {/* <button >
-          Join as a Doctor
-        </button> */}
       </div>
     </header>
   );

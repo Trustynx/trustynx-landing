@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Text from "@/components/base/Text";
+import Image from "next/image";
 
 interface Asked {
   id: number;
@@ -45,16 +47,19 @@ export default function FAQs() {
   }
 
   return (
-    <div className="py-24 px-64 bg-accent-light text-center">
+    <div
+      id="faqs"
+      className="py-24 max-lgg:py-15 px-64 max-lgg:px-30 bg-accent-light text-center"
+    >
       <div className="h-fit">
-        <h1 className="text-main text-5xl text-main pb-4">
+        <Text as="h1">
           Real <span className="font-bold">Questions.</span> Straight{" "}
           <span className="font-bold">Answers.</span>
-        </h1>
-        <p className="text-2xl text-para">
+        </Text>
+        <Text as="p">
           We&apos;d rather you asked than wonder. Everything you want to know
           about Trustynx before creating your profile.
-        </p>
+        </Text>
       </div>
       <div className="flex flex-col gap-2 mt-16">
         {freq.map((quency: Asked) => {
@@ -65,17 +70,31 @@ export default function FAQs() {
               className=""
             >
               {clicked === quency.id ? (
-                <div className="bg-button p-6 text-left rounded-[20px] text-white">
+                <div className="bg-button p-6 max-lgg:p-4 text-left rounded-[20px] text-white">
                   <div className="flex justify-between">
-                    <h4 className="font-medium text-2xl pb-6">{quency.que}</h4>
-                    <img src="/images/add.svg" alt="add-icon" />
+                    <h4 className="font-medium text-2xl max-lgg:text-xl pb-6">
+                      {quency.que}
+                    </h4>
+                    <Image
+                      src="/images/add.svg"
+                      alt="add-icon"
+                      width={24}
+                      height={24}
+                    />
                   </div>
                   <p className="leading-[28px]">{quency.ans}</p>
                 </div>
               ) : (
-                <div className="flex justify-between bg-white p-6 text-left rounded-[20px]">
-                  <h4 className="font-medium text-2xl">{quency.que}</h4>
-                  <img src="/images/add-blue.svg" alt="add-icon" />
+                <div className="flex justify-between bg-white p-6 max-lgg:p-4 text-left rounded-[20px]">
+                  <h4 className="font-medium max-lgg:text-xl text-2xl">
+                    {quency.que}
+                  </h4>
+                  <Image
+                    src="/images/add-blue.svg"
+                    alt="add-icon"
+                    width={24}
+                    height={24}
+                  />
                 </div>
               )}
             </div>

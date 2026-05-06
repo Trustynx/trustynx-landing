@@ -1,11 +1,11 @@
-import Hero from "./section/Hero";
-import Navbar from "./components/Navbar";
-import HowItWorks from "./section/HowItWorks";
-import RealValue from "./section/RealValue";
-import TrustModel from "./section/TrustModel";
-import FAQs from "./section/FAQs";
-import JoinIn from "./section/JoinIn";
-import Footer from "./section/Footer";
+import Navbar from "@/components/inc/Navbar";
+import FAQs from "@/section/FAQs";
+import Footer from "@/section/Footer";
+import Hero from "@/section/Hero";
+import HowItWorks from "@/section/HowItWorks";
+import JoinIn from "@/section/JoinIn";
+import RealValue from "@/section/RealValue";
+import TrustModel from "@/section/TrustModel";
 
 export default function Home() {
   return (

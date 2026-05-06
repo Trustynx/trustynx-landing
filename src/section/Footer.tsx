@@ -1,9 +1,16 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <div className="bg-[#0A1A2F] py-32 px-25 text-bright">
       <div className="flex justify-between">
         <div>
-          <img src="/images/white-logo.svg" alt="logo" />
+          <Image
+            width={200}
+            height={53}
+            src="/images/white-logo.svg"
+            alt="logo"
+          />
           <p className="w-[420px] pt-6">
             The verification layer for healthcare professionals. Building trust
             infrastructure that healthcare deserves.
@@ -31,12 +38,14 @@ export default function Footer() {
         <hr className="pb-6" />
         <div className="flex justify-between">
           <div>
-            <img
+            <Image
               src="/images/vector.svg"
               alt="logo"
               className="inline mb-2 pr-3"
+              width={24}
+              height={24}
             />
-            <p className="inline text-xl">
+            <p className="inline">
               {new Date().getFullYear()} Trustynx. All rights reserved.
             </p>
           </div>
